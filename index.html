@@ -6,12 +6,13 @@
   <title>Document</title>
 </head>
 <body>
+  <div id="box"></div>
   
   <script src="https://unpkg.com/vconsole@latest/dist/vconsole.min.js"></script>
   <script>
     var vConsole = new window.VConsole();
     const data = localStorage.getItem('accessToken')
-    alert(data)
+    document.querySelector('#box').textContent = data
   </script>
 </body>
 </html>
